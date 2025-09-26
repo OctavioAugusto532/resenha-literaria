@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Créditos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #000;
+      color: #fff;
+      font-family: 'Roboto Mono', monospace;
+      text-align: center;
+      overflow: hidden;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+    .credits {
+      animation: scroll 20s linear infinite;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+      color: #ffd966;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin: 20px 0;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+
+    h2:nth-child(2) { animation-delay: 1s; }
+    h2:nth-child(3) { animation-delay: 3s; }
+    h2:nth-child(4) { animation-delay: 5s; }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    @keyframes scroll {
+      from { transform: translateY(100%); }
+      to { transform: translateY(-100%); }
+    }
+  </style>
+</head>
+<body>
+  <div class="credits">
+    <h1>🎬 Créditos</h1>
+    <h1>Edição e Gravação: Yan</h2>
+    <h1>Roteiro: Gabriel Marçal</h2>
+    <h1>Gravação e Produção: Octávio</h2>
+  </div>
+</body>
+</html>
